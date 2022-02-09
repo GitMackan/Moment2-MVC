@@ -1,0 +1,42 @@
+[
+  {
+    "Title": "Pulp Fiction",
+    "Director": "Quentin Tarantino",
+    "Year": 1994,
+    "Review": 5,
+    "IMDB": "https://www.imdb.com/title/tt0110912/",
+    "Genre": "Action"
+  },
+  {
+    "Title": "Nyckeln till frihet",
+    "Director": "Frank Darabont",
+    "Year": 1994,
+    "Review": 5,
+    "IMDB": "https://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=9703a62d-b88a-4e30-ae12-90fcafafa3fc&pf_rd_r=2Y296FSNWCRYFNXY4AA1&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1",
+    "Genre": "Thriller"
+  },
+  {
+    "Title": "Fight Club",
+    "Director": " David Fincher",
+    "Year": 1999,
+    "Review": 3,
+    "IMDB": null,
+    "Genre": "Action"
+  },
+  {
+    "Title": "Test",
+    "Director": "Test",
+    "Year": 2003,
+    "Review": 3,
+    "IMDB": null,
+    "Genre": "Äventyr"
+  },
+  {
+    "Title": "test",
+    "Director": "test",
+    "Year": 2010,
+    "Review": 3,
+    "IMDB": "test",
+    "Genre": "Äventyr"
+  }
+]

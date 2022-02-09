@@ -1,0 +1,29 @@
+@model List<Moment2.Models.MovieModel>
+@{
+    ViewData["Title"] = "Kontakt";
+}
+
+<!-- Movies Page -->
+<div class="movie-container">
+    <h2>Filmer</h2>
+    @if (Model != null)
+    {
+        <!-- Skriv ut filmer -->
+        @foreach (var movie in Model)
+        {
+            <div class="movie">
+                <p class="bold">Titel:<span class="movieSpan">@movie.Title</span></p>
+                <p class="bold">Regissör:<span class="movieSpan">@movie.Director</span></p>
+                <p class="bold">År: <span class="movieSpan">@movie.Year</span></p>
+                <p class="bold">Genre:<span class="movieSpan">@movie.Genre</span></p>
+                <p class="bold">Betyg:<span class="movieSpan">@movie.Review/5</span></p>
+
+                <!-- Kontrollera om IMDB-länk finns, skriv ut isåfall -->
+                @if (@movie.IMDB != null)
+                {
+                    <p class="bold"><i class="fas fa-external-link-alt"></i><a href="@movie.IMDB">IMDB-länk</a></p>
+                }
+            </div>
+        }
+    }
+</div>

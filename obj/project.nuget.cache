@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ANqRhqwK5TAV6hM4ooAJY9zK6Apxc7e4hIS1MBFGLCsnuwE7fsT2wv2cqFo8v6k2vM7DGKmeLLa+TS8+mu2ZtQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marcu\\Desktop\\DT191G\\Moment2\\Moment2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marcu\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

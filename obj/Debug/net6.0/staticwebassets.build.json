@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "xwDHTsc8kcQgMeHUfIAwzEtLVFU+9TJSDJ4E+IuB4c0=",
+  "Source": "Moment2",
+  "BasePath": "_content/Moment2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Moment2\\wwwroot",
+      "Source": "Moment2",
+      "ContentRoot": "C:\\Users\\marcu\\Desktop\\DT191G\\Moment2\\wwwroot\\",
+      "BasePath": "_content/Moment2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\marcu\\Desktop\\DT191G\\Moment2\\wwwroot\\css\\styles.css",
+      "SourceId": "Moment2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marcu\\Desktop\\DT191G\\Moment2\\wwwroot\\",
+      "BasePath": "_content/Moment2",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\marcu\\Desktop\\DT191G\\Moment2\\wwwroot\\images\\background.jpg",
+      "SourceId": "Moment2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marcu\\Desktop\\DT191G\\Moment2\\wwwroot\\",
+      "BasePath": "_content/Moment2",
+      "RelativePath": "images/background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\background.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\marcu\\Desktop\\DT191G\\Moment2\\wwwroot\\images\\logo.png",
+      "SourceId": "Moment2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marcu\\Desktop\\DT191G\\Moment2\\wwwroot\\",
+      "BasePath": "_content/Moment2",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\marcu\\Desktop\\DT191G\\Moment2\\wwwroot\\images\\theater.jpg",
+      "SourceId": "Moment2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marcu\\Desktop\\DT191G\\Moment2\\wwwroot\\",
+      "BasePath": "_content/Moment2",
+      "RelativePath": "images/theater.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\theater.jpg"
+    }
+  ]
+}

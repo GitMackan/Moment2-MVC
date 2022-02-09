@@ -1,0 +1,50 @@
+@model Moment2.Models.TopMoviesModel
+@{
+    ViewData["Title"] = "Hem";
+}
+
+<!-- Skriv ut namn från cookie, lagrat i ViewBag -->
+@if (ViewBag.Message != null)
+{
+    <p class="welcome">Välkommen @ViewBag.Message</p>
+}
+
+<!-- Home Page -->
+<div class="home-container">
+    <div class="div">
+        <h2>Startsidan</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quisquam aspernatur officia, sequi enim ad
+            nesciunt
+            labore rem eligendi architecto quae at ex nihil. Obcaecati quia ex dolore, in incidunt error odio rerum
+            quidem
+            consectetur corporis quam consequatur, perspiciatis, facere harum! Dolor, eius ea quidem at porro ab alias
+            eaque?
+        </p>
+    </div>
+    <div>
+        <img src="../theater.jpg" alt="">
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima tempore aperiam ipsam. Voluptate
+        saepe
+        odit molestiae vitae optio repellendus ratione blanditiis recusandae amet. Velit beatae, debitis voluptas labore
+        totam iure impedit blanditiis consectetur voluptatem minus neque aspernatur iste laboriosam fugiat rerum
+        ducimus,
+        praesentium rem, sunt quos et quidem sint.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo soluta, labore perspiciatis facere maiores odit, id
+        aspernatur sequi aperiam, dolorum rerum magnam fugiat a. Fugiat magnam optio omnis reiciendis autem enim, porro
+        laudantium. Impedit iure earum repellendus corrupti beatae odit dolor, ratione mollitia maxime repudiandae?
+        Dolorum, praesentium eius sapiente magni reiciendis, expedita fugit.</p>
+    <div class="topMovies">
+        <h3>Mina bästa filmtips</h3>
+        <!-- Partial -->
+        <partial name="_TopMoviesPartial" model="Model"></partial>
+    </div>
+</div>
+<div class="userName">
+    <!-- Form to store name with cookie -->
+    <form method="post">
+        <p>Vad ska vi kalla dig?</p>
+        <input type="text" placeholder="Användarnamn:" name="user">
+        <input type="submit" value="Välj namn" class="userBtn">
+    </form>
+</div>

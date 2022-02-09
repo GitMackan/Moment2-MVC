@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="se">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/styles.css">
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a asp-controller="Movie" asp-action="Index"><img src="~/logo.png" alt=""></a>
+            <h1>MovieStarz</h1>
+        </div>
+        <!--Navigation-->
+        <nav>
+            <ul>
+                <li><a asp-controller="Movie" asp-action="Index">Hem</a></li>
+                <li><a asp-controller="Movie" asp-action="Movies">Filmer</a></li>
+                <li><a asp-controller="Movie" asp-action="Add">Lägg till film</a></li>
+                <li><a asp-controller="Movie" asp-action="Contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p>Marcus Nygård</p>
+        </div>
+        <div class="footer-text">
+            <p>Kontakta mig gärna på mina sociala medier!</p>
+            <i class="fas fa-hand-point-right"></i>
+        </div>
+        <div class="socials">
+            <!-- Ikoner för Sociala medier -->
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/b7470f65da.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

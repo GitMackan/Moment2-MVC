@@ -1,0 +1,74 @@
+@model Moment2.Models.MovieModel
+@{
+    ViewData["Title"] = "Filmer";
+}
+
+<!-- Form -->
+<div class="form-container">
+    <h2>Lägg till en film</h2>
+    <form method="post" asp-controller="Movie">
+        <div asp-validation-summary="ModelOnly"></div>
+        <label asp-for="Title"></label>
+        <br>
+        <input asp-for="Title" placeholder="T.ex. Pulp Fiction" />
+        <br>
+        <span asp-validation-for="Title" class="errorMsg"></span>
+        <br><br>
+
+        <label asp-for="Director"></label>
+        <br>
+        <input asp-for="Director" placeholder="T.ex. Quentin Tarantino" />
+        <br>
+        <span asp-validation-for="Director" class="errorMsg"></span>
+        <br><br>
+
+        <label asp-for="Year"></label>
+        <br>
+        <input asp-for="Year" placeholder="T.ex. 1994" />
+        <br>
+        <span asp-validation-for="Year" class="errorMsg"></span>
+        <br><br>
+
+        <label asp-for="IMDB"></label>
+        <br>
+        <input asp-for="IMDB" placeholder="Länk till IMDB" />
+        <br>
+        <span asp-validation-for="IMDB" class="errorMsg"></span>
+        <br><br>
+
+        <label asp-for="Review"></label>
+        <br>
+        <span asp-validation-for="Review" class="errorMsg"></span>
+        <br>
+        <select asp-for="Review">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+        <h3>Genre:</h3>
+        <span asp-validation-for="Genre" class="errorMsg"></span>
+        <div class="checkBox">
+            <label asp-for="Genre">Äventyr</label>
+            <input type="radio" asp-for="Genre" value="Äventyr" class="checkBoxOpt">
+        </div>
+        <div class="checkBox">
+            <label asp-for="Genre">Thriller</label>
+            <input type="radio" asp-for="Genre" value="Thriller" class="checkBoxOpt">
+        </div>
+        <div class="checkBox">
+            <label asp-for="Genre">Action</label>
+            <input type="radio" asp-for="Genre" value="Action" class="checkBoxOpt">
+        </div>
+        <div class="checkBox">
+            <label asp-for="Genre">Romantik</label>
+            <input type="radio" asp-for="Genre" value="Romantik" class="checkBoxOpt">
+        </div>
+
+
+        <input type="submit" value="Lägg till film" class="addBtn">
+    </form>
+</div>

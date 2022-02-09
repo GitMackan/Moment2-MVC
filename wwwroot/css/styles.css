@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(1, 1, 126);
+}
+
+.logo {
+    font-size: 1em;
+    color: rgb(1, 1, 126);
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav {
+    width: 30%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: rgb(1, 1, 126);
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* MAIN */
+
+main {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10vh 1em 10vh 1em;
+    background: url(../background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Index */
+
+.home-container {
+    width: 60%;
+    border: 1px solid black;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.home-container h2 {
+    margin-bottom: 1em;
+}
+
+.home-container p {
+    width: 85%;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    letter-spacing: .02em;
+    color: black;
+}
+
+.home-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.userName {
+    background: white;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 30px;
+}
+
+.userName form {
+    justify-content: space-between;
+    width: 40%;
+}
+
+.userName form input {
+    border-radius: 10px;
+    margin-top: .5em;
+}
+
+.userBtn {
+    width: 50%;
+    background: rgb(1, 1, 126);
+    color: rgb(228, 228, 255);
+    cursor: pointer;
+}
+
+.welcome {
+    color: white;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+
+/* Movies */
+
+.movie-container {
+    background: rgb(255, 255, 255);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 4em;
+}
+
+.movie-container h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+.movie {
+    margin: 1em 0;
+    border-bottom: 1px solid rgb(131, 131, 233);
+    padding: 1em 0;
+    font-size: 1.3em;
+}
+
+i {
+    font-size: 1em;
+    margin-right: .3em;
+}
+
+.movie a {
+    color: rgb(1, 1, 126);
+    text-decoration: none;
+}
+
+.movie a:hover {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.movieSpan {
+    margin-left: .3em;
+    font-weight: 400;
+}
+
+
+/* Add Movie */
+
+.form-container {
+    background: rgb(255, 255, 255);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 4em;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+form label {
+    width: 50%;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+form input {
+    height: 3em;
+    width: 100%;
+    font-size: 1em;
+    padding-left: 1em;
+    background: rgb(252, 252, 252);
+}
+
+.addBtn {
+    width: 50%;
+    margin: 0 auto;
+    background: rgb(1, 1, 126);
+    color: rgb(228, 228, 255);
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.addBtn:hover {
+    text-decoration: under;
+}
+
+.errorMsg {
+    color: red;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+form select {
+    width: 100px;
+    height: 3em;
+    font-size: 1em;
+    padding-left: 1em;
+    margin-bottom: 2em;
+}
+
+.checkBox {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.checkBox input {
+    height: 2em;
+}
+
+
+/* Contact */
+
+.contact-container {
+    background: rgb(255, 255, 255);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 4em;
+    min-height: 60vh;
+}
+
+
+/* Footer */
+
+footer {
+    color: rgb(1, 1, 126);
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding: 2em;
+    align-items: center;
+    font-weight: 600;
+}
+
+.footer-text {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.footer-text i {
+    font-size: 2em;
+    margin-left: .5em;
+    color: rgb(1, 1, 126);
+}
+
+.footer-info {
+    font-size: 1.5em;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials i {
+    font-size: 3em;
+    color: rgb(1, 1, 126);
+}
+
+
+/* Partial */
+
+.contact_partial {
+    font-size: 1.2em;
+    border-bottom: 1px solid black;
+    padding: 2em 0;
+    width: 40%;
+    margin: 1em 0;
+}
+
+.contact_partial a {
+    color: rgb(1, 1, 126);
+}
+
+.viewdata,
+.viewbag {
+    margin: .5em 0;
+    font-size: 1.2em;
+}
+
+.topMovies {
+    margin-top: 3em;
+    border-top: 1px solid rgb(155, 155, 241);
+    padding: 1em 0;
+}
+
+.topMovies ul {
+    list-style: none;
+}
+
+.topMovies h3 {
+    font-size: 2em;
+}
+
+@media all and (max-width: 1450px) {
+    header {
+        flex-direction: column;
+    }
+    nav,
+    .logo {
+        width: 100%;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .form-container {
+        background: rgb(255, 255, 255);
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 4em;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer-info,
+    .footer-text {
+        margin-bottom: 1em;
+    }
+    .footer-text i {
+        display: none;
+    }
+    .userBtn {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1150px) {
+    .form-container,
+    .home-container,
+    .movie-container,
+    .contact-container,
+    .userName {
+        width: 80%;
+    }
+    form {
+        width: 100%;
+    }
+    .contact_partial {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .form-container,
+    .home-container,
+    .movie-container,
+    .contact-container,
+    .userName {
+        width: 100%;
+    }
+    .home-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,13 @@
+@model Moment2.Models.ContactModel
+@{
+    ViewData["Title"] = "Kontakt";
+}
+
+<!-- Contact -->
+<div class="contact-container">
+    <h2><i class="far fa-address-card"></i>Kontakta mig</h2>
+
+    <!-- Partial -->
+    <partial name="_MessagePartial" model="Model"></partial>
+    <partial name="_ContactPartial" model="Model"></partial>
+</div>
